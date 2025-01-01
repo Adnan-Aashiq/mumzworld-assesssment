@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<!-- Register the ExtentReportListener -->
+		<listener class-name="utils.ExtentReportListener" />
+	</listeners>
+
+	<test name="MumzWorldTests">
+		<classes>
+            <class name="mumzworld.CartTestingThroughSignIn"/>
+            <class name="mumzworld.CartTestingThroughSignUp"/>
+        </classes>
+	</test>
+</suite>
